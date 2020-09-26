@@ -8,11 +8,15 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:lilyle19910530/springcloud-lyle-config.git
+#          uri: https://github.com/lilyle19910530/springcloud-lyle-config.git
           search-paths:
-            - springcloud-config
+            - springcloud-lyle-config
+          uri: git@github.com:lilyle19910530/springcloud-lyle-config.git
+#          username: li.lyle.19910530@gmail.com
+#          password: lylejoey520
       label: master
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
+
