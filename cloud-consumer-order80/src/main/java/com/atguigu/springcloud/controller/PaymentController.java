@@ -38,4 +38,9 @@ public class PaymentController {
         return restTemplate.getForEntity(PAYMENT_URL + "/payment/discovery?serviceId=" + serviceId, Object.class);
     }
 
+    @GetMapping(value = "/consumer/payment/zipink")
+    public ResponseEntity<String> zipink(){
+        return restTemplate.getForEntity(PAYMENT_URL+"/payment/zipink", String.class);
+    }
+
 }
